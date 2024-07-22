@@ -50,6 +50,7 @@ func main() {
 
 	printLogo()
 	ctx := utils.NewCtx()
+	utils.checkForUpdates(ctx)
 	start(ctx)
 }
 
