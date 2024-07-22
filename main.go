@@ -2,14 +2,9 @@
 package main
 
 import (
-	"bufio"
 	"context"
-	"encoding/json"
 	"fmt"
-	"io/ioutil"
-	"net/http"
 	"os"
-	"path/filepath"
 	"strings"
 
 	"go.keploy.io/server/v2/cli"
@@ -55,7 +50,7 @@ func main() {
 
 	printLogo()
 	ctx := utils.NewCtx()
-	utils.checkForUpdates(ctx)
+	utils.CheckForUpdate(ctx)
 	start(ctx)
 }
 
